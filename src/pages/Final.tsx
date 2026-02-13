@@ -16,7 +16,7 @@ export default function Final() {
           onClick={() => setIsOpen(true)}
         >
           <div className="letter">
-            <div className="letter-content">
+            <div className={`letter-content ${isOpen ? 'is-visible' : ''}`}>
               <p>Write your message here...</p>
             </div>
           </div>

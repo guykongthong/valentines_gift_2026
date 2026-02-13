@@ -108,12 +108,13 @@
 
 .envelope-flap {
   position: absolute;
-  top: -2px;
+  top: 1px;
+  border-radius: 25px;
   left: -2px;
   right: -2px;
   height: 55%;
   background: linear-gradient(135deg, #f6c7d3, #f09bad);
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
   transform-origin: top center;
   transform: rotateX(0deg);
   transition: transform 400ms ease;
@@ -129,16 +130,19 @@
 .letter {
   position: absolute;
   left: 50%;
-  bottom: 24px;
+  top: 50%;
   width: min(78vw, 640px);
   height: min(70vh, 720px);
-  transform: translate(-50%, 40%) scale(0.62);
+  transform: translate(-50%, 10%) scale(0.62);
   transition: transform 500ms ease;
   z-index: 3;
 }
 
 .final-page.is-open .letter {
-  transform: translate(-50%, -55%) scale(1);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .letter-content {
@@ -154,6 +158,12 @@
   color: #5b1a25;
   font-size: clamp(1rem, 2.2vw, 1.4rem);
   text-align: center;
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+
+.letter-content.is-visible {
+  opacity: 1;
 }
 
 .gallery-page {
