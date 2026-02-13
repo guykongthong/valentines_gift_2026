@@ -17,6 +17,19 @@ export default function Final() {
         >
           <div className="letter">
             <div className={`letter-content ${isOpen ? 'is-visible' : ''}`}>
+              {isOpen && (
+                <button
+                  className="letter-close"
+                  type="button"
+                  aria-label="Close letter"
+                  onClick={event => {
+                    event.stopPropagation()
+                    setIsOpen(false)
+                  }}
+                >
+                  X
+                </button>
+              )}
               <p>Write your message here...</p>
             </div>
           </div>
@@ -25,7 +38,11 @@ export default function Final() {
         </button>
       </div>
 
-      <button className="continue-btn" type="button" onClick={() => navigate('/')}>
+      <button
+        className="continue-btn final-back-btn"
+        type="button"
+        onClick={() => navigate('/')}
+      >
         Back to start
       </button>
     </main>
