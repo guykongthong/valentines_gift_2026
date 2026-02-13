@@ -19,7 +19,7 @@ function App() {
         cursorBlinkDuration={0.5}
       />
       <button className="continue-btn" type="button">
-        Continue
+        ไปต่อ
       </button>
     </main>
   )
