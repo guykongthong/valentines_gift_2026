@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
 :root {
   font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
   line-height: 1.5;
