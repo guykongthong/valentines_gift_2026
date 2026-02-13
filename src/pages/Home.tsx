@@ -21,7 +21,7 @@ export default function Home() {
         type="button"
         onClick={() => navigate('/next')}
       >
-        Continue
+        ไปหน้าต่อไป
       </button>
     </main>
   )
