@@ -1,12 +1,17 @@
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import DomeGallery from '../DomeGallery'
+import picture1 from '../assets/picture1.jpeg'
+import picture2 from '../assets/picture2.jpeg'
+import picture3 from '../assets/picture3.jpeg'
+import picture4 from '../assets/picture4.jpeg'
+import picture5 from '../assets/picture5.jpeg'
+import picture6 from '../assets/picture6.jpeg'
 
 export default function Next() {
   const navigate = useNavigate()
   const [dateValue, setDateValue] = useState('')
   const [error, setError] = useState('')
-  const baseUrl = import.meta.env.BASE_URL
 
   const handleSubmit = () => {
     if (dateValue === '2025-07-13') {
@@ -22,12 +27,12 @@ export default function Next() {
       <div className="gallery-bg" aria-hidden="true">
         <DomeGallery
           images={[
-            `${baseUrl}picture1.jpeg`,
-            `${baseUrl}picture2.jpeg`,
-            `${baseUrl}picture3.jpeg`,
-            `${baseUrl}picture4.jpeg`,
-            `${baseUrl}picture5.jpeg`,
-            `${baseUrl}picture6.jpeg`
+            picture1,
+            picture2,
+            picture3,
+            picture4,
+            picture5,
+            picture6
           ]}
           fit={0.75}
           minRadius={650}
