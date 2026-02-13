@@ -20,10 +20,18 @@ export default function Next() {
     <main className="gallery-page">
       <div className="gallery-bg" aria-hidden="true">
         <DomeGallery
-          fit={0.85}
-          minRadius={600}
+          images={[
+            '/picture1.jpeg',
+            '/picture2.jpeg',
+            '/picture3.jpeg',
+            '/picture4.jpeg',
+            '/picture5.jpeg',
+            '/picture6.jpeg'
+          ]}
+          fit={0.75}
+          minRadius={650}
           maxVerticalRotationDeg={3}
-          segments={24}
+          segments={32}
           dragDampening={2}
           grayscale={false}
         />
