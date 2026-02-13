@@ -30,7 +30,17 @@ export default function Final() {
                   X
                 </button>
               )}
-              <p>Write your message here...</p>
+              <p>Happy Valentines day นะอ้วน ิิ<br></br>
+              วันนี้เป็น valentines ปีแรกของพวกเรานะะะะ<br></br>
+              แล้วเมื่อวานเราสองคนคบกันได้ 7 เดือนแล้วนะ<br></br>
+              เค้าดีใจมากๆเลยที่ได้เจออ้วนนะ<br></br>
+              อ้วนจีบเค้าตอนวันที่ 1 พฤษภาคมอ้วนจำได้ไหม ิิิิ<br></br>
+              ตอนนั้นเค้าก็ไม่ได้คิดอะไรมากแต่ตอนนี้อ้วนห้ามไปไหนห้ามไปไหนเด็ดคาด!<br></br>
+              ครั้งนี้ของขวันอาจจะไม่ได้ใหญ่มาก (มีอย่างอืนใหญ่กว่า ิิ + ตังค์หมด) แต่เค้าก็หวังว่าอ้วนจะชอบนะ<br></br>
+              เค้าเดินดูนานมากๆๆ<br></br>
+              จากวันนี้ไปเค้าจะรักอ้วนแล้วพาอ้วนไปกินของอร่อยๆเยอะเลยเราสองคนจะได้เป็นปีศาจหมู!!!<br></br><br></br>
+              เค้ารักอ้วนน้าา ❤️
+              </p>
             </div>
           </div>
           <div className="envelope-body" />
@@ -38,13 +48,15 @@ export default function Final() {
         </button>
       </div>
 
-      <button
-        className="continue-btn final-back-btn"
-        type="button"
-        onClick={() => navigate('/')}
-      >
-        Back to start
-      </button>
+      {!isOpen && (
+        <button
+          className="continue-btn final-back-btn"
+          type="button"
+          onClick={() => navigate('/')}
+        >
+          กลับไปหน้าแรก
+        </button>
+      )}
     </main>
   )
 }
