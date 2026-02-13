@@ -13,7 +13,7 @@ export default function Next() {
       navigate('/final')
       return
     }
-    setError('That date is not correct.')
+    setError('ไม่ถูกนะคับเบบี๋!!!')
   }
 
   return (
@@ -40,14 +40,14 @@ export default function Next() {
         />
         {error && <p className="overlay-error">{error}</p>}
         <button className="continue-btn" type="button" onClick={handleSubmit}>
-          Submit
+          ตอบ
         </button>
         <button
           className="continue-btn"
           type="button"
           onClick={() => navigate('/')}
         >
-          Back
+          กลับไปหน้าแรก
         </button>
       </div>
     </main>
