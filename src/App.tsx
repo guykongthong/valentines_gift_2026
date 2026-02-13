@@ -3,10 +3,16 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Next from './pages/Next'
 import Final from './pages/Final'
+import TextType from './TextType'
+
+<Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/next" element={<Next />} />
+      <Route path="/final" element={<Final />} />
+    </Routes>
 
 function App() {
   return (
-<<<<<<< HEAD
     <main className="app-shell">
       <TextType
         text={[
@@ -26,13 +32,6 @@ function App() {
         ไปต่อ
       </button>
     </main>
-=======
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/next" element={<Next />} />
-      <Route path="/final" element={<Final />} />
-    </Routes>
->>>>>>> development/feature/domeGalleryPage
   )
 }
 
