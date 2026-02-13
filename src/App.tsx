@@ -4,14 +4,14 @@ import Home from './pages/Home'
 import Next from './pages/Next'
 import Final from './pages/Final'
 
-<Routes>
+function App() {
+  return (
+    <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/next" element={<Next />} />
       <Route path="/final" element={<Final />} />
     </Routes>
-
-function App() {
-  <script></script>
+  )
 }
 
 export default App
