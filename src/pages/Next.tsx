@@ -6,6 +6,7 @@ export default function Next() {
   const navigate = useNavigate()
   const [dateValue, setDateValue] = useState('')
   const [error, setError] = useState('')
+  const baseUrl = import.meta.env.BASE_URL
 
   const handleSubmit = () => {
     if (dateValue === '2025-07-13') {
@@ -21,12 +22,12 @@ export default function Next() {
       <div className="gallery-bg" aria-hidden="true">
         <DomeGallery
           images={[
-            '/picture1.jpeg',
-            '/picture2.jpeg',
-            '/picture3.jpeg',
-            '/picture4.jpeg',
-            '/picture5.jpeg',
-            '/picture6.jpeg'
+            `${baseUrl}picture1.jpeg`,
+            `${baseUrl}picture2.jpeg`,
+            `${baseUrl}picture3.jpeg`,
+            `${baseUrl}picture4.jpeg`,
+            `${baseUrl}picture5.jpeg`,
+            `${baseUrl}picture6.jpeg`
           ]}
           fit={0.75}
           minRadius={650}
