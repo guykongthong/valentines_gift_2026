@@ -133,8 +133,9 @@
   top: 50%;
   width: min(78vw, 640px);
   height: min(70vh, 720px);
-  transform: translate(-50%, 10%) scale(0.62);
-  transition: transform 500ms ease;
+  transform: translate(-50%, -50%) scale(0.62);
+  opacity: 0;
+  transition: transform 500ms ease 350ms, opacity 350ms ease 350ms;
   z-index: 3;
 }
 
@@ -142,7 +143,8 @@
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate3d(-54%, -56%, 0) scale(1);
+  opacity: 1;
 }
 
 .letter-content {
