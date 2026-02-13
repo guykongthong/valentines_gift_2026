@@ -12,10 +12,12 @@
   "dependencies": {
     "@react-three/fiber": "^9.5.0",
     "@react-three/postprocessing": "^3.0.4",
+    "@use-gesture/react": "^10.3.1",
     "gsap": "^3.14.2",
     "postprocessing": "^6.38.2",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-router-dom": "^7.2.0",
     "three": "^0.182.0"
   },
   "devDependencies": {
