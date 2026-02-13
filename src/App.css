@@ -1,0 +1,52 @@
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.app-shell {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffe9ee;
+  font-size: clamp(1.6rem, 4vw, 3.5rem);
+  letter-spacing: 0.04em;
+  gap: 24px;
+  transform: translateY(-40px);
+  position: relative;
+  z-index: 2;
+}
+
+.dither-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.continue-btn {
+  background: #e6455f;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 12px 36px;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  box-shadow: 0 8px 18px rgba(230, 69, 95, 0.35);
+}
+
+.continue-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(230, 69, 95, 0.45);
+}
+
+.continue-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(230, 69, 95, 0.35);
+}
